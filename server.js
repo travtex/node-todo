@@ -67,6 +67,11 @@ var Todo = mongoose.model('Todo', {
 		});
 	});
 	
+// application ---
+
+	app.get('*', function(req, res) {
+		res.sendfile('./public/index.html');
+	});
 
 // Listen
 
